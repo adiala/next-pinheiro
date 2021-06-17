@@ -5,6 +5,7 @@ const navigation = [
   {name: 'Inicio', href: '#'},
   {name: 'Atuação', href: '#'},
   {name: 'Equipe', href: '#'},
+  {name: 'Contato', href: '#'}
 ]
 
 export const Navbar = () => {
@@ -16,14 +17,16 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className='flex items-center justify-between flex-wrap bg-green-200 p-3 '>
-        <Link href='/'>
-          <a className='inline-flex items-center p-3 ml-5 '>
-            <img src='pinheiro-logo.svg' className='fill-current h-10 w-10 mr-2' />
-          </a>
-        </Link>
+      <nav className='top-0 absolute z-50 flex items-center justify-between w-full px-2 py-3'>
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <Link href='/'>
+              <a className='inline-flex items-center p-3 ml-5 '>
+                <img src='pinheiro-logo.svg' className='fill-current h-12 w-12 mr-2' />
+              </a>
+            </Link>
         <button
-          className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+          className='cursor-pointer inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
           onClick={handleClick}
         >
           <svg
@@ -41,6 +44,7 @@ export const Navbar = () => {
             />
           </svg>
         </button>
+        </div>
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
           className={`${
@@ -50,11 +54,12 @@ export const Navbar = () => {
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             {navigation.map((item) => (
               <Link href={item.href}>
-              <a key={item.name} className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">{item.name}</a>
+              <a key={item.name} className="lg:inline-flex lg:w-auto w-full px-3 py-2 text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">{item.name}</a>
               </Link>
             ))}            
           </div>
         </div>
+      </div>
       </nav>
     </>
   );
