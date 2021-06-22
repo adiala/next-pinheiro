@@ -1,7 +1,7 @@
 export const Contact = () => {
     return (
         <>          
-        <section className="w-full h-full bg-center bg-cover" style={{minHeight: "60vh", backgroundImage: "url('emailbg.jpg')"}}>
+        <section id="contato" className="w-full h-full bg-center bg-cover" style={{minHeight: "60vh", backgroundImage: "url('emailbg.jpg')"}}>
           
           <div className="container mx-auto px-4" >
             <div className="flex flex-wrap justify-center">

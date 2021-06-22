@@ -2,10 +2,9 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const navigation = [
-  {name: 'Inicio', href: '#'},
-  {name: 'Atuação', href: '#'},
-  {name: 'Equipe', href: '#'},
-  {name: 'Contato', href: '#'}
+  {name: 'Atuação', href: '#atuacao'},
+  {name: 'Equipe', href: '#equipe'},
+  {name: 'Contato', href: '#contato'}
 ]
 
 export const Navbar = () => {

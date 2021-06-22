@@ -9,7 +9,7 @@ const card = [
 export const Cards = () => {
     return (
         <>
-            <section className="pt-20 pb-20">
+            <section id="atuacao" className="pt-20 pb-20">
                 <div className="container mx-auto px-5">
                     <div className='flex flex-wrap justify-center text-center mb-24'>
                         <div className='w-full lg:w-full px-4'>

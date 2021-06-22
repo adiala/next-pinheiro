@@ -6,7 +6,7 @@ const card = [
 export const Team = () => {
     return (
         <>
-            <section className="pt-20 pb-20" style={{minHeight: "60vh", backgroundColor: "#EFE4D9"}}>
+            <section id="equipe" className="pt-20 pb-20" style={{minHeight: "60vh", backgroundColor: "#EFE4D9"}}>
                 <div className="container mx-auto px-4">
                     <div className='flex flex-wrap justify-center text-center mb-16'>
                         <div className='w-full lg:w-6/12 px-4'>
