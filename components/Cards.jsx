@@ -10,16 +10,16 @@ export const Cards = () => {
     return (
         <>
             <section className="pt-20 pb-20">
-                <div className="container mx-auto px-4">
+                <div className="container mx-auto px-5">
                     <div className='flex flex-wrap justify-center text-center mb-24'>
-                        <div className='w-full lg:w-6/12 px-4'>
-                            <h2 className='text-4xl font-semibold'>Nossas áreas de atuação</h2>
+                        <div className='w-full lg:w-full px-4'>
+                            <h2 className='text-4xl font-semibold break-words'>Nossas áreas de atuação</h2>
                         </div>
                     </div>
                    
-                    <div className="flex flex-wrap justify-center space-x-4">
+                    <div className="flex flex-wrap justify-center lg:gap-4">
                                 {card.map((item) => (
-                                    <div className="text- bg-white mb-6 shadow-lg rounded-lg" style={{ maxWidth: "280px" }}>
+                                    <div className="bg-white mb-6 shadow-lg rounded-lg w-auto lg:max-w-sm">
                                         <img alt="..." src={item.image} className="w-full max-h-full align-middle rounded-t-lg" />
                                         <blockquote className="relative p-5">
                                             <svg
@@ -34,7 +34,7 @@ export const Cards = () => {
                                                 <polygon points="-30,95 583,95 583,65" className="text-white fill-current"></polygon>
                                             </svg>
                                             <h4 className="text-xl font-bold text-black">{item.title}</h4>
-                                            <p className="mt-4 text-md leading-relaxed text-gray-600 mb-1">{item.text}</p>
+                                            <p className="mt-4 leading-relaxed text-gray-600 mb-1">{item.text}</p>
                                         </blockquote>                        
                                     </div>
                                 ))}
