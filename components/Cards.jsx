@@ -13,7 +13,7 @@ export const Cards = () => {
                 <div className="container mx-auto px-5">
                     <div className='flex flex-wrap justify-center text-center mb-24'>
                         <div className='w-full lg:w-full px-4'>
-                            <h2 className='text-4xl font-semibold break-words'>Nossas áreas de atuação</h2>
+                            <h1 className='text-4xl font-semibold break-words'>Áreas de Atuação</h1>
                         </div>
                     </div>
                    
@@ -34,7 +34,7 @@ export const Cards = () => {
                                                 <polygon points="-30,95 583,95 583,65" className="text-white fill-current"></polygon>
                                             </svg>
                                             <h4 className="text-xl font-bold text-black">{item.title}</h4>
-                                            <p className="mt-4 leading-relaxed text-gray-600 mb-1">{item.text}</p>
+                                            <p className="text-md mt-4 mb-1 leading-relaxed text-gray-600">{item.text}</p>
                                         </blockquote>                        
                                     </div>
                                 ))}
