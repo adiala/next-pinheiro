@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Pinheiro de Azevedo Advogados</title>
+        <title>Pinheiro de Azevedo Advocacia</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />

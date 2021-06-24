@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const Footer = () => {
   return (
     <footer className="pt-8 pb-6" style={{ backgroundColor: "#162836" }}>
@@ -10,7 +12,7 @@ export const Footer = () => {
             className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 rounded-full outline-none focus:outline-none p-3"
             type="button"
           >
-            <i className="flex fab fa-twitter"></i>
+            <i className="flex fab fa-twitter" aria-hidden="true"></i>
           </button>
         </div>
 

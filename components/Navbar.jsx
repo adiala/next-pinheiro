@@ -21,15 +21,15 @@ export const Navbar = () => {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href='/'>
               <a className='inline-flex items-center p-3 ml-5 '>
-                <img src='pinheiro-logo.svg' className='fill-current h-12 w-12 mr-2' />
+                <img src='pinheiro-logo.svg' className='fill-current h-12 w-12' />
               </a>
             </Link>
             <button
-              className='cursor-pointer inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+              className='cursor-pointer inline-flex p-3 rounded lg:hidden text-white ml-auto'
               onClick={handleClick}
             >
               <svg
-                className='w-6 h-6'
+                className='w-8 h-8'
                 fill='none'
                 stroke='currentColor'
                 viewBox='0 0 24 24'
@@ -49,9 +49,9 @@ export const Navbar = () => {
               }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
           >
             <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-              {navigation.map((item) => (
-                <Link href={item.href}>
-                  <a key={item.name} className="lg:inline-flex lg:w-auto w-full px-3 py-2 text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">{item.name}</a>
+              {navigation.map((item, index) => (
+                <Link key={index} href={item.href} scroll={false} replace>
+                  <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">{item.name}</a>
                 </Link>
               ))}
             </div>

@@ -15,8 +15,8 @@ export const Team = () => {
                     </div>
 
                     <div className="flex flex-wrap justify-center lg:gap-16">
-                        {card.map((item) => (
-                            <div className="bg-white mb-6 shadow-lg" style={{ maxWidth: "500px" }}>
+                        {card.map((item, index) => (
+                            <div key={index} className="bg-white mb-6 shadow-lg" style={{ maxWidth: "500px" }}>
                                 <blockquote className="relative p-5">
                                     <h4 className="text-xl font-bold text-black border-b-2">{item.title}</h4>
                                     <p className="mt-4 text-md leading-relaxed text-gray-600 mb-1">{item.text}</p>
