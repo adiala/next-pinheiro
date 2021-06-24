@@ -1,8 +1,8 @@
 export const Hero = () => {
     return (
         <>
-            <div className="relative pt-16 pb-32 flex content-center items-center justify-center" style={{minHeight: "100vh"}}>
-                <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{backgroundImage: "url('court.jpg')"}}>
+            <div className="relative pt-16 pb-32 flex content-center items-center justify-center" style={{ minHeight: "100vh" }}>
+                <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{ backgroundImage: "url('court.jpg')" }}>
                     <span id="blackOverlay" className="w-full h-full absolute opacity-30 bg-black"></span>
                 </div>
                 <div className="container relative mx-auto">
