@@ -20,16 +20,17 @@ export const Navbar = () => {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href='/'>
-              <a className='inline-flex items-center p-3 ml-5 '>
+              <a className='inline-flex items-center p-3 lg:ml-5 '>
                 <img src='pinheiro-logo.svg' className='fill-current h-12 w-12' />
               </a>
             </Link>
             <button
-              className='cursor-pointer inline-flex p-3 rounded lg:hidden text-white ml-auto'
+              className='cursor-pointer inline-flex p-3 rounded lg:hidden text-white ml-auto outline-none focus:outline-none' 
+              type="button"
               onClick={handleClick}
             >
               <svg
-                className='w-8 h-8'
+                className='w-8 h-8 self-center'
                 fill='none'
                 stroke='currentColor'
                 viewBox='0 0 24 24'
@@ -46,12 +47,12 @@ export const Navbar = () => {
           </div>
           <div
             className={`${active ? '' : 'hidden'
-              }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+              }    lg:inline-flex lg:flex-grow lg:w-auto lg:bg-transparent lg:shadow-none bg-white text-gray-700 rounded-sm shadow-lg w-full`}
           >
-            <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+            <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center lg:divide-y-0 items-start justify-items-end flex flex-col lg:h-auto divide-y divide-gray-100'>
               {navigation.map((item, index) => (
                 <Link key={index} href={item.href} scroll={false} replace>
-                  <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">{item.name}</a>
+                  <a className="lg:inline-flex lg:w-auto lg:text-white lg:font-bold lg:text-base text-sm w-full px-3 py-2 items-center justify-center hover:bg-gray-600 hover:text-white">{item.name}</a>
                 </Link>
               ))}
             </div>

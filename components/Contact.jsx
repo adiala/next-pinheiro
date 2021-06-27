@@ -1,4 +1,41 @@
+import { useState } from 'react'
+
 export const Contact = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log('Sending')
+
+    let data = {
+        name,
+        email,
+        message
+    }
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res) => {
+        console.log('Response received')
+        if (res.status === 200) {
+            console.log('Response succeeded!')
+            setSubmitted(true) 
+            setName('')
+            setEmail('')
+            setMessage('')
+        }
+    })
+  }
+
   return (
     <>
       <section id="contato" className="w-full h-full bg-center bg-cover" style={{ minHeight: "60vh", backgroundImage: "url('emailbg.jpg')" }}>
@@ -21,6 +58,8 @@ export const Contact = () => {
                     </label>
                     <input
                       type="text"
+                      onChange={(e)=>{setName(e.target.value)}}
+                      name='name'
                       className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                       placeholder="Nome Completo"
                       style={{ transition: "all .15s ease" }}
@@ -36,6 +75,8 @@ export const Contact = () => {
                     </label>
                     <input
                       type="email"
+                      onChange={(e)=>{setEmail(e.target.value)}}
+                      name='email'
                       className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                       placeholder="Email"
                       style={{ transition: "all .15s ease" }}
@@ -52,12 +93,15 @@ export const Contact = () => {
                     <textarea
                       rows="4"
                       cols="80"
+                      onChange={(e)=>{setMessage(e.target.value)}}
+                      name='message'
                       className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                       placeholder="Escreva uma mensagem..."
                     />
                   </div>
                   <div className="text-center mt-6">
                     <button
+                      onClick={(e)=>{handleSubmit(e)}}
                       className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                       type="button"
                       style={{ transition: "all .15s ease" }}
