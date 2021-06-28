@@ -8,12 +8,12 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col flex-wrap justify-center items-center gap-6">
           <img src='pinheiro-logo-full.svg' className="h-24" />
-          <button
-            className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 rounded-full outline-none focus:outline-none p-3"
-            type="button"
-          >
-            <i className="flex fab fa-twitter" aria-hidden="true"></i>
-          </button>
+          <a href="http://twitter.com/nauebernardo" target="_blank">
+            <button
+              className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 rounded-full outline-none focus:outline-none p-3" type="button">
+              <i className="flex fab fa-twitter" aria-hidden="true"></i>
+            </button>
+          </a>
         </div>
 
         <hr className="my-6 border-gray-400" />
