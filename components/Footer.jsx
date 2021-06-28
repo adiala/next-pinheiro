@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col flex-wrap justify-center items-center gap-6">
           <img src='pinheiro-logo-full.svg' className="h-24" />
-          <a href="http://twitter.com/nauebernardo" target="_blank">
+          <a href="http://twitter.com/nauebernardo" target="_blank" rel="noopener">
             <button
               className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 rounded-full outline-none focus:outline-none p-3" type="button">
               <i className="flex fab fa-twitter" aria-hidden="true"></i>
