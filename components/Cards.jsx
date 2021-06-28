@@ -22,7 +22,7 @@ export const Cards = () => {
                     <div className="flex flex-wrap justify-center lg:gap-4">
                         {card.map((item, index) => (
                             <div key={index} className="bg-white mb-6 shadow-lg rounded-lg w-auto lg:max-w-sm">
-                                <Image alt="..." src={item.image} width={400} height={400} layout="responsive" className="w-full max-h-full align-middle rounded-t-lg" />
+                                <Image alt="..." src={item.image} width={500} height={500} className="w-full max-h-full align-middle rounded-t-lg" />
                                 <blockquote className="relative p-5">
                                     <svg
                                         preserveAspectRatio="none"
