@@ -1,5 +1,5 @@
 const card = [
-    { title: 'Nauê Bernardo Pinheiro de Azevedo', text: 'Cientista Político pela Universidade de Brasília e advogado, com especialização em Direito Público pela Escola Superior de Magistratura do Distrito Federal. Cursa o mestrado em direito privado na Università degli Studi "Mediterranea" di Reggio Calabria. Tem mais de 10 anos de experiência com análise política e Congresso Nacional. Atua em todos os graus de jurisdição, sobretudo Superior Tribunal de Justiça e Supremo Tribunal Federal.' },
+    { title: 'Nauê Bernardo Pinheiro de Azevedo', text: 'Advogado e Cientista Político pela Universidade de Brasília, com especialização em Direito Público pela Escola Superior de Magistratura do Distrito Federal. Cursa o mestrado em direito privado na Università degli Studi "Mediterranea" di Reggio Calabria. Tem mais de 10 anos de experiência com análise política e Congresso Nacional. Atua em todos os graus de jurisdição, sobretudo Superior Tribunal de Justiça e Supremo Tribunal Federal.' },
     { title: 'Isaac Pereira Simas', text: 'Advogado, formado em direito pela Universidade de Brasília. Experiência em processo legislativo, legística, análise política e relações governamentais, com atuação na Câmara dos Deputados, Senado Federal e Tribunal de Contas da União. Realiza pesquisas em Direito Constitucional.' },
 ]
 
