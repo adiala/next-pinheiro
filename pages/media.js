@@ -2,22 +2,22 @@ import Head from "next/head";
 import Link from "next/link";
 import { React, useState, useEffect } from "react";
 import { Footer } from "@components/Footer";
-import client from "client";
-import groq from "groq";
+// import client from "client";
+// import groq from "groq";
 
-export async function getStaticProps() {
-  const query = groq`
-  "posts" : *[_type == 'post'],
-  `;
+// export async function getStaticProps() {
+//   const query = groq`
+//   "posts" : *[_type == 'post'],
+//   `;
 
-  const data = await client.fetch(query);
+//   const data = await client.fetch(query);
 
-  return {
-    props: {
-      posts: data.posts,
-    },
-  };
-}
+//   return {
+//     props: {
+//       posts: data.posts,
+//     },
+//   };
+// }
 
 export default function Media() {
   const [navbar, setNavbar] = useState(false);
