@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const Footer = () => {
   return (
-    <footer className="pt-8 pb-6" style={{ backgroundColor: "#162836" }}>
+    <footer className="pt-8 pb-6 bg-primary">
 
 
       <div className="container mx-auto px-4">
