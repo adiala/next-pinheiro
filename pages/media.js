@@ -19,8 +19,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Media({ posts }) {
-  console.log(posts);
+export default function Media() {
   const [navbar, setNavbar] = useState(false);
 
   if (typeof window !== "undefined") {
