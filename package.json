@@ -15,6 +15,7 @@
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^2.11.0",
     "@sanity/image-url": "^0.140.22",
+    "date-fns": "^2.22.1",
     "dotenv": "^10.0.0",
     "groq": "^2.2.6",
     "next": "^11.0.0",
