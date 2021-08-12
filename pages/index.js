@@ -12,6 +12,10 @@ export default function Home() {
       <Head>
         <title>Pinheiro de Azevedo Advocacia</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta
+          name="description"
+          content="Pinheiro de Azevedo Advocacia"
+        ></meta>
       </Head>
       <Navbar />
       <Hero />

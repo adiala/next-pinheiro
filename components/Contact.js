@@ -1,12 +1,12 @@
-import Image from 'next/image'
-
 export const Contact = () => {
-
   return (
     <>
-      <section id="contato" className="w-full h-full bg-center bg-cover" style={{ minHeight: "60vh", backgroundImage: "url('emailbg.jpg')" }}>
-
-        <div className="container mx-auto px-4" >
+      <section
+        id="contato"
+        className="w-full h-full bg-center bg-cover"
+        style={{ minHeight: "60vh", backgroundImage: "url('emailbg.jpg')" }}
+      >
+        <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center">
             <div className="w-full lg:w-6/12 px-4">
               <div className="relative flex flex-col min-w-0 break-words w-full mt-10 mb-6 shadow-lg rounded-lg bg-gray-300">
@@ -15,7 +15,12 @@ export const Contact = () => {
                     Entre em contato conosco
                   </h4>
 
-                  <form name="contact" action="#" method="POST" data-netlify="true">
+                  <form
+                    name="contact"
+                    action="#"
+                    method="POST"
+                    data-netlify="true"
+                  >
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="relative w-full mb-3 mt-8">
                       <label
@@ -26,7 +31,7 @@ export const Contact = () => {
                       </label>
                       <input
                         type="text"
-                        name='name'
+                        name="name"
                         className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                         placeholder="Nome Completo"
                         style={{ transition: "all .15s ease" }}
@@ -42,7 +47,7 @@ export const Contact = () => {
                       </label>
                       <input
                         type="email"
-                        name='email'
+                        name="email"
                         className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                         placeholder="Email"
                         style={{ transition: "all .15s ease" }}
@@ -59,7 +64,7 @@ export const Contact = () => {
                       <textarea
                         rows="4"
                         cols="80"
-                        name='message'
+                        name="message"
                         className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                         placeholder="Escreva uma mensagem..."
                       />
@@ -81,5 +86,5 @@ export const Contact = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
