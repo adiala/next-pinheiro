@@ -24,6 +24,7 @@ export const Navbar = () => {
                 <img
                   src="pinheiro-logo.svg"
                   className="fill-current h-12 w-12"
+                  alt="Logo Pinheiro de Azevedo"
                 />
               </a>
             </Link>
